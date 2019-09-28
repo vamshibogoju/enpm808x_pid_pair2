@@ -1,7 +1,13 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/vamshibogoju/enpm808x_pid_pair2.svg?branch=master)](https://travis-ci.org/vamshibogoju/enpm808x_pid_pair2)
+[![Coverage Status](https://coveralls.io/repos/github/vamshibogoju/enpm808x_pid_pair2/badge.svg?branch=master)](https://coveralls.io/github/vamshibogoju/enpm808x_pid_pair2?branch=master)
 ---
+
+# Part 1
+
+- Driver - Vamshi Kumar Bogoju
+- Navigator - Achal Pragneshkumar vyas 
+
 
 ## Overview
 
