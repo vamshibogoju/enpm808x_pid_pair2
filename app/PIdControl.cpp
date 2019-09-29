@@ -1,10 +1,10 @@
 /**
  * PIdControl.cpp
  *
- *  Created on: Sep 27, 2019
- *  \author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  \author   part2: Achal Pragneshkumar Vyas(driver) Vamshi Kumar Bogoju(navigator)
- *  \copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
+ *  @Created on: Sep 27, 2019
+ *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
+ *  @author   part2: Achal Pragneshkumar Vyas(driver) Vamshi Kumar Bogoju(navigator)
+ *  @copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
  */
 
 
