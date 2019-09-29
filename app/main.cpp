@@ -9,17 +9,17 @@
 #include <iostream>
 #include "../include/PIdControl.h"
 
+/**
+ * @brief This is the main file which takes the set point and
+ * current velocity as user input and prints the new velocity after calculating using the function
+ */
 int main() {
     double setPoint, actualVelocity;
     std::cout << "Enter the Setpoint " << std::endl;
-    std::cin >> setPoint;
+    std::cin >> setPoint;  // User input the reference value
     std::cout << "Enter the actual velocity " << std::endl;
-    std::cin >> actualVelocity;
+    std::cin >> actualVelocity;  // User entering the actual velicity
 
 
     PIdControl pid;
     double newVel = pid.compute(setPoint, actualVelocity);
-    std::cout << "The new velocity is " << newVel << std::endl;
-    return 0;
-}
-
