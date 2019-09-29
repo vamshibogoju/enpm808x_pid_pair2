@@ -1,8 +1,8 @@
 /**
- *  \brief    File including the class definition and stub
- *  \file     Header file - pid_controller
- *  \author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  \copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
+ *  @brief    File including the class definition and stub
+ *  @file     Header file - pid_controller
+ *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
+ *  @copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
  */
 
 #ifndef INCLUDE_PIDCONTROL_H_
