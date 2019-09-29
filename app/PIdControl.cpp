@@ -1,10 +1,10 @@
 /**
  * PIdControl.cpp
- *
+ *  @brief  this file defines constructors and functions
  *  @Created on: Sep 27, 2019
  *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  @author   part2: Achal Pragneshkumar Vyas(driver) Vamshi Kumar Bogoju(navigator)
- *  @copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
+ *  @author   part2: Akwasi A. Obeng(driver) Sayan Brahma(navigator)
+ *  @copyright  Akwasi A. Obeng and  Sayan Brahma
  */
 
 
