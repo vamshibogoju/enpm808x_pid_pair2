@@ -2,8 +2,8 @@
  *  @brief    File used to input setpoint and actual velocity
  *  @file     main file
  *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  @author   part2: Achal Pragneshkumar Vyas(driver) Vamshi Kumar Bogoju(navigator)
- *  @copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
+ *  @author   part2: Akwasi A. Obeng(driver) and Sayan Brahma(navigator)
+ *  @copyright Akwasi A. Obeng(driver) and Sayan Brahma(navigator)
  */
 
 #include <iostream>
