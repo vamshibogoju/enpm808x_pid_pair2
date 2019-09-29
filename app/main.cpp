@@ -23,3 +23,4 @@ int main() {
 
     PIdControl pid;
     double newVel = pid.compute(setPoint, actualVelocity);
+}
