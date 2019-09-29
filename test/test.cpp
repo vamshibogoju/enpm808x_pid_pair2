@@ -1,8 +1,8 @@
 /*!
- *  \brief    This is the test file in the test folder
- *  \file     Test file - test.cpp
- *  \author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  \copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
+ *  @brief    This is the test file in the test folder
+ *  @file     Test file - test.cpp
+ *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
+ *  @copyright  Vamshi Kumar Bogoju and Achal Pragneshkumar Vyas
  */
 
 #include <gtest/gtest.h>
