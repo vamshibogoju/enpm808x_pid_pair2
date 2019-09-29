@@ -23,4 +23,7 @@ int main() {
 
     PIdControl pid;
     double newVel = pid.compute(setPoint, actualVelocity);
+// calling the function which calculates
+    std::cout << "The new velocity is " << newVel << std::endl;
+    return 0;
 }
