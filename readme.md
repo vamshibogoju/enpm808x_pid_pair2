@@ -8,6 +8,11 @@
 - Driver - Vamshi Kumar Bogoju
 - Navigator - Achal Pragneshkumar vyas 
 
+# Part 2 (switched role)
+
+- Driver - Akwasi A. Obeng
+- Navigator - Sayan Brahma
+
 
 ## Overview
 
