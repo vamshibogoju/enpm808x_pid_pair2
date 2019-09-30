@@ -27,7 +27,7 @@ PIdControl::PIdControl() {
  */
 double PIdControl::compute(double setPoint, double actualVelocity) {
     double error = setPoint - actualVelocity;  // compute the error
-    std::cout << "Difference between setpoint and actual velocity is : " << error << "m/s" << std::endl;
+    std::cout << "The error is" << error << "m/s" << std::endl;
 
     double newVel = 0;
     newVel = (kp * error) + (ki * error * dt)+ (kd * error / dt);
