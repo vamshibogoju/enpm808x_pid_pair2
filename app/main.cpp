@@ -1,29 +1,48 @@
 /**
  *  @brief    File used to input setpoint and actual velocity
  *  @file     main file
- *  @author   part1: Vamshi Kumar Bogoju(driver) Achal Pragneshkumar Vyas(navigator)
- *  @author   part2: Akwasi A. Obeng(driver) and Sayan Brahma(navigator)
- *  @copyright Akwasi A. Obeng(driver) and Sayan Brahma(navigator)
+ *  @Created on: Nov 25, 2019
+ *  @author  Vamshi Kumar Bogoju
+ *  @copyright Vamshi Kumar Bogoju
  */
 
+
 #include <iostream>
+#include "memory"
 #include "../include/PIdControl.h"
+#include "../include/Pid.h"
 
 /**
  * @brief This is the main file which takes the set point and
  * current velocity as user input and prints the new velocity after calculating using the function
  */
 int main() {
-    double setPoint, actualVelocity;
-    std::cout << "Enter the Setpoint " << std::endl;
-    std::cin >> setPoint;  // User input the reference value
-    std::cout << "Enter the actual velocity " << std::endl;
-    std::cin >> actualVelocity;  // User entering the actual velicity
+	// Instantiate a object
+	  Pid pid;
+	  // point the virtual class object to the Pid class
+	  std::unique_ptr<PIdControl> pidc = std::make_unique<Pid>();
 
+	  // variables to hold user input
+	  float fVal, iVal;
 
-    PIdControl pid;
-    double newVel = pid.compute(setPoint, actualVelocity);
-// calling the function which calculates
-    std::cout << "The new velocity is " << newVel << std::endl;
-    return 0;
-}
+	  // input Target setpoint velocity
+	  std::cout << "Enter the Target velocity" << std::endl;
+	  std::cin >> fVal;
+
+	  // input actual velocity
+	  std::cout << "Enter the current velocity" << std::endl;
+	  std::cin >> iVal;
+
+	  // PID gains
+	  pidc->setKD(1);
+	  pidc->setKI(0.1);
+	  pidc->setKP(2);
+
+	  // compute the control input
+	  float inc = pid.computePID(fVal, iVal);
+
+	  // output the input to the screen
+	  std::cout << "Input value: " << inc << std::endl;
+
+	  return 0;
+	}
