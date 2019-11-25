@@ -14,11 +14,22 @@
 
 class PIdControl {
 	/**
-	 *  @brief This contains the class members which are private.In this,PID system variables are in private.
+	 *  @brief This contains the class members which are protected.In this,PID system variables are in protected.
 	 */
 
-private:
-	double kp, ki, kd, dt;
+protected:
+	// variable to store proportional gain
+	float kP;
+	// variable to store derivative gain
+	float kD;
+	// variable to store integral gain
+	float kI;
+	// variable to store time constant
+	float dT;
+	// variable to store error values for integration
+	float prevError;
+	// variable used to store integration values
+	float inte;
 
 	/**
 	 *  @brief This contains the class members which are public.It consists of constructors and functions
@@ -33,9 +44,36 @@ public:
 	 */
 	virtual ~PIdControl();
 	/**
-	 * @brief This is the function to implement PID functionality
+	 * @brief pure virtual computePID method
+	 * @param spVel
+	 * @param curVel
+	 * @return input of type float
+	 * a pure virtual function to be derived for
+	 * cascaded PID classes
 	 */
-	virtual double compute(double setPoint, double actualVelocity);
+	virtual float computePID(float spVel, float curVel) =0;
+	/**
+	 * @brief virtual function setKP
+	 * @param kp of type float
+	 * @return boolean
+	 * function to set the kp value
+	 */
+	virtual bool setKP(float kp);
+	/**
+	 * @brief virtual function setKI
+	 * @param kI of type float
+	 * @return boolean
+	 * function to set the kI value
+	 */
+	virtual bool setKI(float ki);
+
+	/**
+	 * @brief virtual function setKD
+	 * @param kd of type float
+	 * @return boolean
+	 * function to set the kd value
+	 */
+	virtual bool setKD(float kd);
 };
 
 #endif  // INCLUDE_PIDCONTROL_H_
